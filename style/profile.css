@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.main {
+  display: flex;
+  object-fit: fill;
+  background-repeat: no-repeat;
+  background: url("https://wallpapers.com/images/hd/clean-background-w7k9sqsj91esv3sm.jpg");
+}
+
+.main .sidebar {
+  height: 100vh;
+  width: 410px;
+  background-color: #343541;
+  color: white;
+  position: relative;
+}
+
+.sidebar,
+.profile {
+  padding: 20px;
+}
+
+.sidebar .image img {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.main .sidebar .logout {
+  position: absolute;
+  bottom: 0;
+  padding: 10px 20px;
+}
+
+.upload label {
+  display: inline-block;
+  background-color: rgb(64, 65, 79);
+  color: white;
+  padding: 0.5rem;
+  font-family: sans-serif;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.profile .heading p {
+  font-size: 32px;
+  font-weight: 400;
+}
+
+.container .form {
+  margin-top: 30px;
+  width: 60%;
+}
+
+.form .input-box {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.input-box label {
+  color: white;
+}
+
+.form :where(.input-box input, .select-box) {
+  position: relative;
+  height: 50px;
+  width: 100%;
+  outline: none;
+  font-size: 1rem;
+  color: rgb(64, 65, 79);
+  margin-top: 8px;
+  border: 1px solid rgb(64, 65, 79);
+  border-radius: 4px;
+  padding: 0 15px;
+}
+
+.input-box input:focus {
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+}
+
+select {
+  background-color: #00000000;
+}
+
+.select-box select {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  border: none;
+  color: #a3a3a6;
+  font-size: 1rem;
+}
+
+.form button {
+  margin-top: 32px;
+  width: 100%;
+  background-color: rgb(64, 65, 79);
+  color: white;
+  padding: 8px 24px;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  outline: none;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.login {
+  margin-top: 32px;
+  display: flex;
+  justify-content: center;
+  font-size: 16px;
+}
+
+.login p,
+a {
+  color: white;
+}
+
+.login p:last-child a {
+  margin-left: 0.25rem;
+  opacity: 0.5;
+  text-decoration: none;
+}
+
+.login p:last-child a:hover {
+  margin-left: 0.25rem;
+  opacity: 1;
+  color: dodgerblue;
+}
+
+

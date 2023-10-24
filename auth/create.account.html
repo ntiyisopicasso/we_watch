@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style/create.account.css" />
+    <title>Create Account</title>
+  </head>
+
+  <body>
+    <section class="container">
+      <header>Registration</header>
+      <form
+        method="POST"
+        action="/server/create.account.php"
+        class="form"
+        onsubmit="return validateForm();"
+      >
+        <div class="input-box">
+          <input
+            type="number"
+            placeholder="Student Number"
+            name="Student"
+            required
+          />
+        </div>
+
+        <div class="column">
+          <div class="input-box">
+            <input type="text" placeholder="First name" name="name" required />
+          </div>
+
+          <div class="input-box">
+            <input type="text" placeholder="Surname" name="surname" required />
+          </div>
+        </div>
+
+        <div class="input-box">
+          <input
+            type="text"
+            placeholder="Email address"
+            name="email"
+            id="email"
+            required
+            onchange="validateEmail();"
+          />
+          <span id="emailError" class="error-message"></span>
+        </div>
+
+        <div class="column">
+          <div class="input-box">
+            <input
+              type="text"
+              placeholder="Phone number"
+              name="phone"
+              required
+            />
+          </div>
+        </div>
+
+        <div class="input-box">
+          <div class="column">
+            <div class="select-box">
+              <select name="module">
+                <option hidden>Module code</option>
+                <option value="SCSC012">SCSCO12</option>
+                <option value="SMTH012">SMTH012</option>
+                <option value="SSTS012">SSTS012</option>
+                <option value="SAPA012">SAPA012</option>
+                <option value="SHEL012">SHEL012</option>
+              </select>
+            </div>
+            <span id="moduleError" class="error-message"></span>
+          </div>
+          <div class="column password">
+            <input
+              type="password"
+              placeholder="Password"
+              name="password"
+              id="password"
+              onchange="validatePassword();"
+              required
+            />
+
+            <input
+              type="password"
+              placeholder="Confirm Password"
+              id="confirmPassword"
+              onchange="validatePassword();"
+              required
+            />
+          </div>
+
+          <span id="passwordError" class="error-message"></span>
+        </div>
+        <button>Submit</button>
+        <div class="login">
+          <p>Already have account?</p>
+          <p><a href="/auth/login.html">Log in</a></p>
+        </div>
+      </form>
+    </section>
+
+    <script src="/script/register.js"></script>
+  </body>
+</html>

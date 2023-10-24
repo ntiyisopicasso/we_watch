@@ -1,0 +1,99 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  color: white;
+}
+
+body {
+  background-color: #343541;
+}
+
+.main {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-image: url('https://e1.pxfuel.com/desktop-wallpaper/544/126/desktop-wallpaper-related-keywords-suggestions-for-movie-theater-backgrounds-1215x734-for-your-mobile-tablet-movie-screen.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+header {
+  color: #fff;
+  padding: 10px 20px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 24px;
+  text-transform: uppercase;
+  font-weight: 600;
+  padding: 20px;
+  position: relative;
+  
+}
+
+.nav-links {
+  display: flex;
+  gap: 10px;
+}
+
+.nav-links li {
+  list-style: none;
+  margin-right: 20px;
+  font-size: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #20a7a0;
+  text-decoration: underline;
+}
+
+.hero {
+  color: #fff;
+  text-align: center;
+  padding: 100px 0;
+}
+
+.hero h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 8px 20px;
+  background-color: #20a7a0;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 4px;
+}
+
+footer {
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 20px;
+}

@@ -1,0 +1,87 @@
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .container h2{
+            color: azure;
+            text-transform: capitalize;
+        }
+
+        .movie {
+            width: 250px;
+            margin: 20px;
+            border: 1px solid #ccc;
+            text-align: center;
+        }
+
+        .movie img {
+            object-fit: cover;
+            width: inherit;
+            height: inherit;
+            
+        }
+        body{
+            background-image: url('https://cdn.wallpapersafari.com/29/44/linm7I.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .top{
+            text-align: center;
+
+        }
+
+        header{
+            text-transform: uppercase;
+            text-shadow: 2px 2px black ;
+            font-size: 30px;
+            color: azure;
+            text-decoration: underline;
+            padding: 10px;
+        }
+
+        .top nav {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .top nav button {
+            background-color: red;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            margin-right: 10px;
+            cursor: pointer;
+            border-radius: 10px;
+            font-size: 16px;
+        }
+        
+        .top nav a {
+            text-decoration: none;
+            color: #ff4500;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+        
+        .top nav a:hover {
+            color: #fff;
+        }
+
+        .top h2{
+            font-family: Arial, Helvetica, sans-serif;
+            font-style: italic;
+            color: #fff;
+            font-size: 18px;
+        }
+
+        footer {
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            font-size: 20px;
+            text-shadow: 2px 2px black;
+          }
+    
